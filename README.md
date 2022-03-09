@@ -1,2 +1,2 @@
 # flatten-array
-Flatten a multi-dimensional array
+Flatten a multi-dimensional nested array
