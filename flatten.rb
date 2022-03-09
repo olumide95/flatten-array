@@ -5,6 +5,14 @@ def flatten(input)
   
   result = []
   
+  input.each do |item|
+     if item.kind_of?(Array) && !item.empty? 
+        result += flatten(item) 
+     elsif !item.kind_of?(Array)
+        result.push(item) 
+     end
+    end
+  
   return result
 end
 
