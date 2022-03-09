@@ -1,5 +1,11 @@
 def flatten(input)
+  return input if !input.kind_of?(Array)
+
+  return input if input.empty? 
   
+  result = []
+  
+  return result
 end
 
 
