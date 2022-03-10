@@ -27,6 +27,8 @@ assert_equal 1, flatten(1)
 
 assert_equal [], flatten([])
 
+assert_equal [], flatten([[[[[]]]]])
+
 assert_equal({}, flatten({}))
 
 assert_equal ['1', '2', '3', '4', '5', '6', '7'], flatten([ '1', [ '2', ['3', ['4', ['5']], '6'] ], '7' ])
