@@ -13,7 +13,7 @@ def flatten(input)
      end
     end
   
-  return result
+  result
 end
 
 def assert_equal(expected, actual)
