@@ -1,21 +1,20 @@
 def flatten(input)
-  return input if !input.kind_of?(Array)
+  return input unless input.is_a?(Array)
 
   return input if input.empty? 
   
   result = []
   
   input.each do |item|
-     if item.kind_of?(Array) && !item.empty? 
+     if item.is_a?(Array) && !item.empty?
         result += flatten(item) 
-     elsif !item.kind_of?(Array)
+     elsif !item.is_a?(Array)
         result.push(item) 
      end
     end
   
   return result
 end
-
 
 def assert_equal(expected, actual)
   if expected != actual
